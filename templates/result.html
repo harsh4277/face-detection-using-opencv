@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if result %}
+        <ul>
+            {% for photo in result %}
+                <li><img src="{{ photo }}" width="200"></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching photos found.</p>
+    {% endif %}
+</body>
+</html>
